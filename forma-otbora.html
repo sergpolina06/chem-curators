@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анкета отбора в кураторы | Химфак</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Кураторы первокурсников Химфака МГУ</h1>
+      <nav class="site-nav">
+        <a href="index.html">Куратор — это...</a>
+        <a class="current" href="otbor-v-kuratory.html">Отбор в кураторы</a>
+        <a href="shkola-kuratorov.html">Школа кураторов</a>
+        <a href="posvyashchenie-pervokursnikov.html">Посвящение первокурсников</a>
+        <a href="test-kakoi-ty-kurator.html">Тест: Какой ты куратор?</a>
+      </nav>
+      <div class="top-right-media">
+        <div class="school-square">Школа<br />Кураторов</div>
+        <img class="corner-logo" src="assets/curators-logo.png" alt="Логотип кураторов" />
+      </div>
+    </header>
+
+    <main>
+      <section class="placeholder-card">
+        <h2>Анкета для отбора в кураторы</h2>
+        <p>Заполните форму ниже. В следующем шаге подключим сбор ответов в Google Таблицу.</p>
+      </section>
+
+      <section id="curators-form-card" class="placeholder-card">
+        <form id="curators-form" class="form-grid" action="#" method="post">
+          <div class="question-item">
+            <label class="question-title" for="fullName">Напишите свои ФИО</label>
+            <input id="fullName" type="text" name="fullName" required />
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="vkLink">Ссылка на твою страницу в ВК</label>
+            <p class="question-comment">В формате https://vk.com/...</p>
+            <input id="vkLink" type="url" name="vkLink" placeholder="https://vk.com/..." required />
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="telegramNick">Напиши свой ник в Телеграме</label>
+            <p class="question-comment">В формате @nickname</p>
+            <input id="telegramNick" type="text" name="telegramNick" placeholder="@nickname" required />
+          </div>
+
+          <div class="question-item highlighted-question">
+            <p class="question-title">Проверь, что твои личные сообщения открыты</p>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="groupNumber">Номер академической группы</label>
+            <p class="question-comment">
+              В какой группе ты будешь учиться с 1 сентября 2026 года?
+            </p>
+            <input id="groupNumber" type="text" name="groupNumber" required />
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="unionTicketNumber">Номер твоего профсоюзного билета</label>
+            <p class="question-comment">
+              Чтобы узнать свой номер, нужно зайти в личный кабинет на сайте
+              lk.msuprof.com и перейти в раздел «карта Zachёt!». Номер карты и является номером Вашего
+              профбилета. Если ты не член профсоюза, то поставь прочерк.
+            </p>
+            <input id="unionTicketNumber" type="text" name="unionTicketNumber" required />
+          </div>
+
+          <div class="question-item">
+            <p class="question-title">Проживаешь в общежитии или в Москве?</p>
+            <div class="answer-options">
+              <label><input type="radio" name="residence" value="ДСЛ" required />ДСЛ</label>
+              <label><input type="radio" name="residence" value="ГЗ" />ГЗ</label>
+              <label><input type="radio" name="residence" value="Москва или Подмосковье" />Москва или Подмосковье</label>
+            </div>
+          </div>
+
+          <div class="question-item">
+            <p class="question-title">Как прошла последняя сессия?</p>
+            <div class="answer-options">
+              <label><input type="radio" name="sessionResult" value="Пересдач нет" required />Пересдач нет</label>
+              <label><input type="radio" name="sessionResult" value="Первый раз сдаю в сентябре" />Первый раз сдаю в сентябре</label>
+              <label><input type="radio" name="sessionResult" value="Есть 1 пересдача" />Есть 1 пересдача</label>
+              <label><input type="radio" name="sessionResult" value="Есть 2 и более пересдач" />Есть 2 и более пересдач</label>
+            </div>
+          </div>
+
+          <div class="question-item">
+            <p class="question-title">Был ли у тебя опыт кураторства?</p>
+            <div class="answer-options">
+              <label><input type="radio" name="curatorExperience" value="Да" required />Да</label>
+              <label><input type="radio" name="curatorExperience" value="Нет" />Нет</label>
+            </div>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="curatorStory">Уже был куратором? Тогда расскажи нам об этом!</label>
+            <p class="question-comment">
+              Если ты, например, был гидом на Капустнике или Дне Химика, то обязательно укажи!
+              Если нет, то поставь прочерк.
+            </p>
+            <textarea id="curatorStory" name="curatorStory" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <p class="question-title">Поедешь с группой на посвят?</p>
+            <p class="question-comment">
+              Как проходил посвят в прошлом году смотри в группе Посвящение в химики МГУ
+              https://vk.com/cheminduct В новом учебном году посвящение планируется на выходных в середине
+              сентября
+            </p>
+            <div class="answer-options">
+              <label><input type="radio" name="inductionTrip" value="Да" required />Да</label>
+              <label><input type="radio" name="inductionTrip" value="Нет" />Нет</label>
+              <label><input type="radio" name="inductionTrip" value="Пока не знаю" />Пока не знаю</label>
+            </div>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="personalQualities">
+              Расскажи о своих личных качествах и о своем опыте внеучебной деятельности, которые помогут
+              быть крутым куратором!
+            </label>
+            <textarea id="personalQualities" name="personalQualities" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <p class="question-title">
+              Немного ностальгии - ты принимал(а) активное участие в конкурсе групп на своем первом курсе?
+            </p>
+            <div class="answer-options">
+              <label><input type="radio" name="groupContestParticipation" value="Да" required />Да</label>
+              <label><input type="radio" name="groupContestParticipation" value="Нет" />Нет</label>
+            </div>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="groupContestStory">
+              Расскажи, в каких этапах конкурса групп ты принимал(а) участие на своем первом курсе? Что тебе
+              понравилось, а что бы ты хотел(а) изменить?
+            </label>
+            <p class="question-comment">Если нет, то поставь прочерк.</p>
+            <textarea id="groupContestStory" name="groupContestStory" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <p class="question-title">Готов пройти очную школу кураторов в последних числах августа?</p>
+            <div class="answer-options">
+              <label><input type="radio" name="readyForSchool" value="Да" required />Да</label>
+              <label><input type="radio" name="readyForSchool" value="Нет" />Нет</label>
+              <label><input type="radio" name="readyForSchool" value="Пока не знаю" />Пока не знаю</label>
+            </div>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="studyHelp">
+              Одной из обязанностей куратора является помощь первокурсникам в том, чтобы влиться в учебный
+              процесс. Кратко (~5 предложений) расскажи о том, как ты сможешь помочь ребятам и как проходит
+              твоя учёба.
+            </label>
+            <p class="question-comment">
+              Например, поделись своим опытом написания курсовой по неорганической химии или
+              подготовки к пересдаче.
+            </p>
+            <textarea id="studyHelp" name="studyHelp" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="scienceExperience">Расскажи о своём опыте научной работы.</label>
+            <p class="question-comment">
+              В каких лабораториях и как долго ты работал? Есть ли у тебя опыт выступления на
+              научных конференциях?
+            </p>
+            <textarea id="scienceExperience" name="scienceExperience" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="whyCurator">
+              Почему ты хочешь быть куратором? Расскажи об этом в 1-2 предложениях.
+            </label>
+            <textarea id="whyCurator" name="whyCurator" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="groupWish">
+              Есть ли у тебя пожелания, какую группу и с кем курировать?
+            </label>
+            <p class="question-comment">
+              Обращаем внимание, что мы постараемся участь все пожелания, но не гарантируем, что
+              все получат желаемые группы и напарников.
+            </p>
+            <textarea id="groupWish" name="groupWish" required></textarea>
+          </div>
+
+          <div class="question-item">
+            <label class="question-title" for="extraQuestions">
+              Если у тебя остались вопросы, то можешь оставить их тут
+            </label>
+            <textarea id="extraQuestions" name="extraQuestions"></textarea>
+          </div>
+
+          <button class="action-link" type="submit">Отправить анкету</button>
+        </form>
+        <p class="form-note">После подключения Google Таблицы здесь будет настоящая отправка данных.</p>
+      </section>
+
+      <section id="form-success-message" class="success-message" aria-live="polite">
+        Спасибо тебе за готовность помогать будущим первокурсникам - это важное дело! Ты герой! Скоро мы
+        свяжемся с тобой!
+      </section>
+
+      <footer class="contacts">
+        <strong>Контакты:</strong>
+        Профком студентов Химфака —
+        <a href="https://vk.com/chemmsuprofcom" target="_blank" rel="noopener noreferrer"
+          >https://vk.com/chemmsuprofcom</a
+        >
+      </footer>
+    </main>
+    <script>
+      const form = document.getElementById("curators-form");
+      const formCard = document.getElementById("curators-form-card");
+      const successMessage = document.getElementById("form-success-message");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        formCard.style.display = "none";
+        successMessage.classList.add("visible");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
